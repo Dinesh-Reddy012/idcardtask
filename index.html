@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" onclick="idcard()">click me for id card!</button>
+    <!-- <img src="./assets/passpht.jpg" alt=""></img> -->
+    <script>
+          let btn=document.querySelector("btn")
+          let div=document.createElement("div")
+          let img=document.createElement("img")
+          let h2=document.createElement("h2")
+          let h1=document.createElement("h2")
+          let h3=document.createElement("h2")
+          img.setAttribute("src","./assets/passpht.jpg")
+          
+          function idcard(){
+          div.style.border="2px solid black"
+          div.style.width="50vw"
+        //   div.style.height="50vh"
+        //   div.style.marginTop="30px"
+         div.style.display="flex"
+         div.style.flexDirection="column"
+        //  div.style.paddingLeft="50%"
+        //  div.style.justifyContent="center"
+        //  div.style.alignContent="center"
+         div.style.alignItems="center"
+         h3.innerHTML="Ph.no:99988****21"
+         
+          img.style.height="50%"
+          img.style.width="50%"
+          img.style.marginTop="30px"
+        //   img.style.marginLeft="30px"
+          h1.innerHTML="Name : Dinesh"
+          h2.innerHTML="Blood group : 'O'+ve"
+        //   h2.style.marginBottom="100px"
+          div.append(img,h1,h2,h3)
+
+
+          document.body.append(div)
+
+          }
+    </script>
+</body>
+</html>
